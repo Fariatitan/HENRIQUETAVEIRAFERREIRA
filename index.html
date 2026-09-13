@@ -14,13 +14,12 @@
   --bg-card: #FFFFFF;
   --bg-overlay: rgba(244, 241, 234, 0.96);
   --ink: #141413;
-  --ink-dark: #1A1918;
   --text-secondary: #4A463F;
   --muted: #7E786E;
   --line: #D9D3C7;
   --line-subtle: #E8E2D6;
   --accent: #9B4B32;
-  --accent-gold: #C59B3F;
+  --accent-gold: #B58A38;
   --white: #FAF8F4;
   --shadow-sm: 0 4px 16px rgba(20, 20, 19, 0.05);
   --shadow-md: 0 14px 36px rgba(20, 20, 19, 0.08);
@@ -67,11 +66,11 @@ button {
 .view.active {
   display: block;
   opacity: 1;
-  animation: fadeInView 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: fadeInView 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes fadeInView {
-  from { opacity: 0; transform: translateY(8px); }
+  from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -149,48 +148,43 @@ header nav button:hover::after {
   width: 100%;
 }
 
-/* Home / Hub Cards */
+/* Home / Panorama */
 #home {
   padding: 72px 32px 48px;
   max-width: 1280px;
   margin: 0 auto;
 }
 
-.home-banner {
-  background: linear-gradient(135deg, #1C1B19 0%, #292623 100%);
-  color: #FAF8F4;
-  padding: 36px 32px;
-  border-radius: 2px;
-  margin-bottom: 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(255,255,255,0.08);
+.home-header {
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
 }
 
-.home-banner-text h1 {
-  font-size: clamp(24px, 3.2vw, 36px);
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 6px;
-}
-
-.home-banner-text p {
-  font-size: 14px;
-  color: #D6D0C4;
-  max-width: 680px;
-}
-
-.home-banner-badge {
+.home-kicker {
   font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: 0.18em;
-  color: var(--accent-gold);
+  letter-spacing: 0.22em;
+  color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 4px;
   display: block;
+}
+
+.home-title {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 6px;
+}
+
+.home-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  max-width: 720px;
 }
 
 .index-grid {
@@ -291,78 +285,65 @@ header nav button:hover::after {
   gap: 12px;
 }
 
-/* Inner Section Banners & Layout */
+/* Inner View (Clean luxury light layout, NO dark banner box) */
 .content {
   padding: 72px 32px 56px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.section-banner {
-  position: relative;
-  background: linear-gradient(135deg, #1C1B19 0%, #292623 100%);
-  color: #FAF8F4;
-  padding: 30px 28px;
-  border-radius: 2px;
-  margin-bottom: 24px;
+.content-top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(255,255,255,0.08);
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.section-banner-text {
-  max-width: 780px;
-}
-
-.section-banner-kicker {
-  font-size: 10px;
+.kicker {
+  font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.22em;
-  color: var(--accent-gold);
+  color: var(--accent);
   text-transform: uppercase;
-  display: block;
-  margin-bottom: 6px;
 }
 
-.section-banner-title {
-  font-size: clamp(24px, 3.5vw, 36px);
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  line-height: 1.1;
-  margin-bottom: 8px;
-}
-
-.section-banner-desc {
-  font-size: 13.5px;
-  line-height: 1.6;
-  color: #D6D0C4;
-}
-
-.section-banner-back {
+.back {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  padding: 8px 16px;
-  border: 1px solid rgba(255,255,255,0.3);
-  color: #FAF8F4;
-  background: rgba(255,255,255,0.06);
-  border-radius: 2px;
+  padding: 6px 14px;
+  border: 1px solid var(--line);
+  background: var(--bg-card);
   transition: var(--transition);
-  white-space: nowrap;
-  margin-left: 20px;
+  color: var(--ink);
 }
 
-.section-banner-back:hover {
-  background: #FAF8F4;
+.back:hover {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: #FAF8F4;
+}
+
+.content-heading {
+  font-size: clamp(26px, 3.5vw, 38px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  line-height: 1.15;
   color: var(--ink);
-  border-color: #FAF8F4;
+}
+
+.content-lead {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  max-width: 840px;
+  margin-bottom: 22px;
 }
 
 .section-block-title {
@@ -577,9 +558,6 @@ footer {
 @media (max-width: 900px) {
   header { padding: 0 16px; }
   header nav { display: none; }
-  .home-banner { flex-direction: column; align-items: flex-start; gap: 14px; padding: 24px 20px; }
-  .section-banner { flex-direction: column; align-items: flex-start; gap: 14px; padding: 24px 20px; }
-  .section-banner-back { margin-left: 0; }
   .index-grid { grid-template-columns: 1fr; }
   .facts { grid-template-columns: 1fr; gap: 12px; }
   .content { padding: 68px 16px 36px; }
@@ -607,12 +585,10 @@ footer {
 
 <!-- ================= VIEW: HOME (PANORAMA DOS 6 BANNERS) ================= -->
 <section id="home" class="view active">
-  <div class="home-banner">
-    <div class="home-banner-text">
-      <span class="home-banner-badge">DIREÇÃO CRIATIVA · MODA · ARTE VISUAL</span>
-      <h1>Henrique Taveira</h1>
-      <p>Ateliê de criação e desenvolvimento de moda contemporânea, intervenções em artes visuais têxteis, direção criativa de campanhas e projetos institucionais de impacto.</p>
-    </div>
+  <div class="home-header">
+    <span class="home-kicker">DIREÇÃO CRIATIVA · MODA · ARTE VISUAL</span>
+    <h1 class="home-title">Henrique Taveira</h1>
+    <p class="home-subtitle">Ateliê de criação e desenvolvimento de moda contemporânea, intervenções em artes visuais têxteis, direção criativa de campanhas e projetos institucionais de impacto.</p>
   </div>
 
   <div class="index-grid">
@@ -714,16 +690,14 @@ footer {
 <!-- ================= 01. VIEW: MODA (COLEÇÕES & PRODUTO COMERCIAL) ================= -->
 <section id="moda" class="view">
   <div class="content">
-    <div class="section-banner">
-      <div class="section-banner-text">
-        <span class="section-banner-kicker">01 / MODA, ALFAIATARIA &amp; PRODUTO</span>
-        <h2 class="section-banner-title">MODA &amp; ALFAIATARIA</h2>
-        <p class="section-banner-desc">
-          Desenvolvimento de linhas comerciais de moda e alfaiataria contemporânea. A precisão do corte, a escolha rigorosa de tecidos nobres e o equilíbrio entre a forma estruturada e o conforto do corpo em movimento.
-        </p>
-      </div>
-      <button class="section-banner-back" onclick="go('home')">← PANORAMA</button>
+    <div class="content-top">
+      <span class="kicker">01 / MODA, ALFAIATARIA &amp; PRODUTO</span>
+      <button class="back" onclick="go('home')">← PANORAMA</button>
     </div>
+    <h2 class="content-heading">MODA &amp; ALFAIATARIA</h2>
+    <p class="content-lead">
+      Desenvolvimento de linhas comerciais de moda e alfaiataria contemporânea. A precisão do corte, a escolha rigorosa de tecidos nobres e o equilíbrio entre a forma estruturada e o conforto do corpo em movimento.
+    </p>
 
     <div class="section-block-title">
       <span>ALFAIATARIA COMERCIAL &amp; COLEÇÕES (ANIMALE)</span>
@@ -838,16 +812,14 @@ footer {
 <!-- ================= 02. VIEW: ARTE (OBRAS, INTERVENÇÕES TÊXTEIS & SÉRIES) ================= -->
 <section id="arte" class="view">
   <div class="content">
-    <div class="section-banner">
-      <div class="section-banner-text">
-        <span class="section-banner-kicker">02 / ARTES VISUAIS &amp; INTERVENÇÕES</span>
-        <h2 class="section-banner-title">ARTE VISUAL &amp; TÊXTIL</h2>
-        <p class="section-banner-desc">
-          Pesquisa plástica autoral integrando arte contemporânea, intervenções manuais, bordados botânicos, pintura têxtil gestual e séries visuais poéticas. A matéria têxtil tratada como tela e suporte expressivo.
-        </p>
-      </div>
-      <button class="section-banner-back" onclick="go('home')">← PANORAMA</button>
+    <div class="content-top">
+      <span class="kicker">02 / ARTES VISUAIS &amp; INTERVENÇÕES</span>
+      <button class="back" onclick="go('home')">← PANORAMA</button>
     </div>
+    <h2 class="content-heading">ARTE VISUAL &amp; TÊXTIL</h2>
+    <p class="content-lead">
+      Pesquisa plástica autoral integrando arte contemporânea, intervenções manuais, bordados botânicos, pintura têxtil gestual e séries visuais poéticas. A matéria têxtil tratada como tela e suporte expressivo.
+    </p>
 
     <div class="section-block-title">
       <span>INTERVENÇÕES TÊXTEIS &amp; OBRAS AUTORAIS</span>
@@ -984,16 +956,14 @@ footer {
 <!-- ================= 03. VIEW: PROJETOS (CASES INSTITUCIONAIS & CBF) ================= -->
 <section id="projetos" class="view">
   <div class="content">
-    <div class="section-banner">
-      <div class="section-banner-text">
-        <span class="section-banner-kicker">03 / PROJETOS ESPECIAIS &amp; CASES</span>
-        <h2 class="section-banner-title">PROJETOS &amp; CASES ESPECIAIS</h2>
-        <p class="section-banner-desc">
-          Grandes projetos especiais e institucionais conectando estratégia de marca, alta moda, desenvolvimento de imagem, representatividade de gênero e repercussão na mídia global.
-        </p>
-      </div>
-      <button class="section-banner-back" onclick="go('home')">← PANORAMA</button>
+    <div class="content-top">
+      <span class="kicker">03 / PROJETOS ESPECIAIS &amp; CASES</span>
+      <button class="back" onclick="go('home')">← PANORAMA</button>
     </div>
+    <h2 class="content-heading">PROJETOS &amp; CASES ESPECIAIS</h2>
+    <p class="content-lead">
+      Grandes projetos especiais e institucionais conectando estratégia de marca, alta moda, desenvolvimento de imagem, representatividade de gênero e repercussão na mídia global.
+    </p>
 
     <div class="section-block-title">
       <span>CASE HISTÓRICO: SELEÇÃO BRASILEIRA FEMININA CBF x ANIMALE (COPA 2023)</span>
@@ -1086,16 +1056,14 @@ footer {
 <!-- ================= 04. VIEW: PROCESSO (PESQUISA, CROQUIS & ARQUIVO) ================= -->
 <section id="processo" class="view">
   <div class="content">
-    <div class="section-banner">
-      <div class="section-banner-text">
-        <span class="section-banner-kicker">04 / PROCESSO, LAB &amp; ARQUIVO</span>
-        <h2 class="section-banner-title">PROCESSO &amp; PESQUISA</h2>
-        <p class="section-banner-desc">
-          O método de ateliê: pesquisa de campo em Veneza, investigação semântica, desenho de croquis manuais, testes de moulage tridimensional, plissados artesanais e fichas de produto.
-        </p>
-      </div>
-      <button class="section-banner-back" onclick="go('home')">← PANORAMA</button>
+    <div class="content-top">
+      <span class="kicker">04 / PROCESSO, LAB &amp; ARQUIVO</span>
+      <button class="back" onclick="go('home')">← PANORAMA</button>
     </div>
+    <h2 class="content-heading">PROCESSO &amp; PESQUISA</h2>
+    <p class="content-lead">
+      O método de ateliê: pesquisa de campo em Veneza, investigação semântica, desenho de croquis manuais, testes de moulage tridimensional, plissados artesanais e fichas de produto.
+    </p>
 
     <div class="section-block-title">
       <span>PROJETO AUTORAL: COLEÇÃO PEGGY GUGGENHEIM &amp; CALDER (2017)</span>
@@ -1221,16 +1189,14 @@ footer {
 <!-- ================= 05. VIEW: SOBRE (PERFIL EXECUTIVO) ================= -->
 <section id="sobre" class="view">
   <div class="content">
-    <div class="section-banner">
-      <div class="section-banner-text">
-        <span class="section-banner-kicker">05 / PERFIL &amp; TRAJETÓRIA</span>
-        <h2 class="section-banner-title">SOBRE HENRIQUE TAVEIRA</h2>
-        <p class="section-banner-desc">
-          Estilista, Diretor Criativo, Artista Visual e Arquiteto. Uma visão integradora que transita com naturalidade entre o rigor técnico da modelagem, a sensibilidade artística da intervenção manual e a estratégia comercial de grandes marcas de moda.
-        </p>
-      </div>
-      <button class="section-banner-back" onclick="go('home')">← PANORAMA</button>
+    <div class="content-top">
+      <span class="kicker">05 / PERFIL &amp; TRAJETÓRIA</span>
+      <button class="back" onclick="go('home')">← PANORAMA</button>
     </div>
+    <h2 class="content-heading">SOBRE HENRIQUE TAVEIRA</h2>
+    <p class="content-lead">
+      Estilista, Diretor Criativo, Artista Visual e Arquiteto. Uma visão integradora que transita com naturalidade entre o rigor técnico da modelagem, a sensibilidade artística da intervenção manual e a estratégia comercial de grandes marcas de moda.
+    </p>
 
     <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; align-items: start; margin-bottom: 36px;">
       <div style="border: 1px solid var(--line); overflow: hidden; background: #E4DED3; box-shadow: var(--shadow-md);">
@@ -1269,37 +1235,35 @@ footer {
 <!-- ================= 06. VIEW: CONTATO ================= -->
 <section id="contato" class="view">
   <div class="content">
-    <div class="section-banner">
-      <div class="section-banner-text">
-        <span class="section-banner-kicker">06 / ATENDIMENTO &amp; PARCERIAS</span>
-        <h2 class="section-banner-title">CONTATO COMERCIAL</h2>
-        <p class="section-banner-desc">
-          Disponível para consultorias de moda, desenvolvimento de coleções de alfaiataria, direção criativa de campanhas, projetos institucionais e encomendas de obras têxteis.
-        </p>
-      </div>
-      <button class="section-banner-back" onclick="go('home')">← PANORAMA</button>
+    <div class="content-top">
+      <span class="kicker">06 / ATENDIMENTO &amp; PARCERIAS</span>
+      <button class="back" onclick="go('home')">← PANORAMA</button>
     </div>
+    <h2 class="content-heading">CONTATO COMERCIAL</h2>
+    <p class="content-lead">
+      Disponível para consultorias de moda, desenvolvimento de coleções de alfaiataria, direção criativa de campanhas, projetos institucionais e encomendas de obras têxteis.
+    </p>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 36px;">
       <div style="background: var(--bg-card); border: 1px solid var(--line); padding: 28px; display: flex; flex-direction: column; gap: 10px;">
         <span style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: var(--accent); text-transform: uppercase;">WHATSAPP DIRETO</span>
         <strong style="font-size: 18px; color: var(--ink);">(11) 95070-4952</strong>
         <p style="font-size: 12.5px; color: var(--muted);">Atendimento ágil para novos projetos e orçamentos.</p>
-        <a href="https://wa.me/5511950704952" target="_blank" class="section-banner-back" style="margin-left:0; margin-top:10px; justify-content:center; background:var(--ink); color:#FAF8F4; border-color:var(--ink);">CHAMAR NO WHATSAPP →</a>
+        <a href="https://wa.me/5511950704952" target="_blank" class="back" style="margin-top:10px; justify-content:center; background:var(--ink); color:#FAF8F4; border-color:var(--ink);">CHAMAR NO WHATSAPP →</a>
       </div>
 
       <div style="background: var(--bg-card); border: 1px solid var(--line); padding: 28px; display: flex; flex-direction: column; gap: 10px;">
         <span style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: var(--accent); text-transform: uppercase;">E-MAIL PROFISSIONAL</span>
         <strong style="font-size: 18px; color: var(--ink);">henrique950704952@gmail.com</strong>
         <p style="font-size: 12.5px; color: var(--muted);">Envio de briefings, propostas e convites institucionais.</p>
-        <a href="mailto:henrique950704952@gmail.com" class="section-banner-back" style="margin-left:0; margin-top:10px; justify-content:center; background:transparent; color:var(--ink); border-color:var(--ink);">ENVIAR E-MAIL →</a>
+        <a href="mailto:henrique950704952@gmail.com" class="back" style="margin-top:10px; justify-content:center;">ENVIAR E-MAIL →</a>
       </div>
 
       <div style="background: var(--bg-card); border: 1px solid var(--line); padding: 28px; display: flex; flex-direction: column; gap: 10px;">
         <span style="font-size: 10.5px; font-weight: 700; letter-spacing: 0.16em; color: var(--accent); text-transform: uppercase;">LOCALIZAÇÃO &amp; BASE</span>
         <strong style="font-size: 18px; color: var(--ink);">Rio de Janeiro / São Paulo</strong>
         <p style="font-size: 12.5px; color: var(--muted);">Atuação presencial em ateliê e remoto para todo o Brasil e exterior.</p>
-        <button onclick="window.print()" class="section-banner-back" style="margin-left:0; margin-top:10px; justify-content:center; background:transparent; color:var(--ink); border-color:var(--ink);">IMPRIMIR / GERAR PDF</button>
+        <button onclick="window.print()" class="back" style="margin-top:10px; justify-content:center;">IMPRIMIR / GERAR PDF</button>
       </div>
     </div>
   </div>
