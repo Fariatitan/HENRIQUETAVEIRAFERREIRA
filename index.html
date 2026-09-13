@@ -2,46 +2,315 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Henrique Taveira — Portfólio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Henrique Taveira</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500&display=swap');
-:root{--bg:#f3f0e8;--ink:#171717;--muted:#716d66;--line:#d8d2c7;--accent:#9b4b32;--white:#faf8f3}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',Arial,sans-serif}body{min-height:100vh}button,a{font:inherit;color:inherit}button{border:0;background:none;cursor:pointer}.view{display:none;min-height:100vh}.view.active{display:block}
-header{position:fixed;z-index:20;top:0;left:0;right:0;height:70px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(243,240,232,.92);backdrop-filter:blur(8px)}header .name{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600}header nav{display:flex;gap:24px;font-size:10px;letter-spacing:.16em;text-transform:uppercase}header nav button:hover{color:var(--accent)}
-.cover{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:70px 7vw 60px;gap:7vw}.cover-copy .kicker{font-size:10px;letter-spacing:.28em;color:var(--accent);margin-bottom:18px}.cover h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(68px,9.5vw,150px);line-height:.84;font-weight:400;letter-spacing:-.055em;margin:0}.cover-meta{margin-top:42px;font-size:10px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}.cover-image{height:min(72vh,680px);overflow:hidden;background:#ddd}.cover-image img{width:100%;height:100%;object-fit:cover;display:block}.enter{margin-top:55px;font-size:10px;letter-spacing:.22em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:7px}.enter:hover{color:var(--accent);border-color:var(--accent)}
-.home{padding:110px 5vw 80px}.home-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:35px}.home-head h2{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(46px,6vw,86px);margin:0}.home-head p{font-size:10px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.menu-card{position:relative;min-height:38vh;background:var(--white);border:1px solid var(--line);overflow:hidden;text-align:left}.menu-card img{width:100%;height:100%;min-height:38vh;object-fit:cover;display:block;transition:transform .6s ease;filter:saturate(.9)}.menu-card:hover img{transform:scale(1.035)}.menu-card .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.68));}.menu-card .label{position:absolute;left:25px;right:25px;bottom:22px;color:#fff}.menu-card .num{font-size:9px;letter-spacing:.2em;opacity:.8}.menu-card h3{font-family:'Playfair Display',Georgia,serif;font-size:40px;font-weight:400;margin:5px 0}.menu-card p{font-size:11px;letter-spacing:.05em;opacity:.85;margin:0}.menu-card:nth-child(3),.menu-card:nth-child(4),.menu-card:nth-child(5),.menu-card:nth-child(6){min-height:30vh}.menu-card:nth-child(3) img,.menu-card:nth-child(4) img,.menu-card:nth-child(5) img,.menu-card:nth-child(6) img{min-height:30vh}
-.content{padding:115px 7vw 90px}.content-top{display:flex;justify-content:space-between;align-items:start;border-bottom:1px solid var(--line);padding-bottom:22px}.back{font-size:10px;letter-spacing:.18em;text-transform:uppercase}.back:hover{color:var(--accent)}.content .kicker{font-size:10px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase}.content h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(54px,8vw,120px);line-height:.9;font-weight:400;margin:18px 0 55px}.content-body{max-width:1100px}.content-lead{max-width:720px;font-size:16px;line-height:1.7;color:#4f4b45;margin-bottom:55px}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project-card{background:var(--white);border:1px solid var(--line)}.project-card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.project-card div{padding:15px}.project-card strong{font-size:12px;letter-spacing:.08em;text-transform:uppercase}.project-card small{display:block;color:var(--muted);margin-top:6px;font-size:11px;line-height:1.5}.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:55px}.fact{padding:18px 18px 18px 0;border-right:1px solid var(--line)}.fact:last-child{border-right:0;padding-left:18px}.fact b{display:block;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.fact span{font-size:13px;line-height:1.5}
-@media(max-width:800px){header{height:58px;padding:0 20px}header nav{display:none}.cover{grid-template-columns:1fr;padding:90px 24px 45px;gap:38px}.cover h1{font-size:18vw}.cover-image{height:52vh}.home{padding:85px 20px 50px}.home-head{display:block}.home-head p{margin-top:12px}.menu-grid{grid-template-columns:1fr}.menu-card,.menu-card:nth-child(n){min-height:55vh}.menu-card img,.menu-card:nth-child(n) img{min-height:55vh}.content{padding:85px 22px 60px}.content h2{font-size:18vw;margin-bottom:35px}.project-grid{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.fact,.fact:last-child{border-right:0;border-bottom:1px solid var(--line);padding:16px 0}.fact:last-child{border-bottom:0}}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@400&display=swap');
+
+:root{
+  --bg:#f5f3ed;
+  --ink:#171716;
+  --muted:#686761;
+  --line:#c9c7bf;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"DM Sans",Arial,sans-serif;
+}
+button,a{font:inherit;color:inherit}
+button{background:none;border:0;padding:0;cursor:pointer}
+a{text-decoration:none}
+.site{
+  max-width:1440px;
+  margin:auto;
+  padding:28px 42px 48px;
+}
+header{
+  height:54px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+.brand{
+  font-size:19px;
+  letter-spacing:.08em;
+  white-space:nowrap;
+}
+nav{
+  display:flex;
+  align-items:center;
+  gap:34px;
+  margin-left:auto;
+}
+nav a, nav button{
+  font-size:10px;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+nav a.active{
+  border-bottom:1px solid var(--ink);
+  padding-bottom:8px;
+}
+.search{
+  font-size:22px;
+  letter-spacing:0;
+  line-height:1;
+  margin-left:8px;
+}
+.hero{
+  position:relative;
+  height:min(47vw,560px);
+  min-height:390px;
+  overflow:hidden;
+  margin-top:1px;
+}
+.hero img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(.94);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(0,0,0,0) 55%);
+  pointer-events:none;
+}
+.hero-copy{
+  position:absolute;
+  z-index:2;
+  left:30px;
+  bottom:28px;
+  color:#fff;
+}
+.kicker{
+  font-size:9px;
+  letter-spacing:.28em;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+.hero h1{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(36px,4vw,62px);
+  font-weight:400;
+  line-height:.96;
+  margin:0;
+}
+.hero-nav{
+  position:absolute;
+  z-index:2;
+  right:28px;
+  bottom:28px;
+  color:#fff;
+  display:flex;
+  gap:18px;
+  align-items:center;
+  font-size:12px;
+}
+.feed{margin-top:28px}
+.section-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--line);
+  padding-bottom:13px;
+  margin-bottom:14px;
+}
+.section-head .left{
+  display:flex;
+  align-items:center;
+  gap:28px;
+}
+.section-head h2{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:34px;
+  font-weight:400;
+  margin:0;
+}
+.rule{width:54px;height:1px;background:var(--ink)}
+.meta{
+  font-size:8px;
+  letter-spacing:.25em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+.grid3{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+}
+.card{
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+.card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .45s ease;
+}
+.card:hover img{transform:scale(1.025)}
+.today .card{aspect-ratio:1.48/1}
+.yesterday{
+  grid-template-columns:1.35fr 1.35fr .72fr;
+}
+.yesterday .card{aspect-ratio:1.45/1}
+.yesterday .card:last-child{aspect-ratio:.82/1}
+.caption{
+  padding-top:9px;
+  font-size:8px;
+  letter-spacing:.23em;
+  text-transform:uppercase;
+}
+.video-badge{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:48px;
+  height:48px;
+  border:1px solid #fff;
+  border-radius:50%;
+  color:#fff;
+  display:grid;
+  place-items:center;
+  font-size:13px;
+  background:rgba(0,0,0,.12);
+}
+footer{
+  margin-top:38px;
+  padding-top:17px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+}
+footer span{
+  font-size:8px;
+  letter-spacing:.24em;
+  text-transform:uppercase;
+  color:var(--muted);
+}
+@media(max-width:800px){
+  .site{padding:18px 16px 34px}
+  header{height:auto;min-height:52px}
+  .brand{font-size:15px}
+  nav{gap:0}
+  nav a{display:none}
+  nav a:first-child{display:block}
+  .search{margin-left:12px}
+  .hero{height:66vh;min-height:420px}
+  .hero-copy{left:20px;bottom:22px}
+  .hero-nav{right:20px;bottom:22px}
+  .section-head .left{gap:13px}
+  .section-head h2{font-size:29px}
+  .meta{display:none}
+  .grid3,.yesterday{grid-template-columns:1fr}
+  .today .card,.yesterday .card,.yesterday .card:last-child{
+    aspect-ratio:1.18/1;
+  }
+  .yesterday .card:nth-child(2){aspect-ratio:1.18/1}
+  footer{flex-direction:column}
+}
 </style>
 </head>
 <body>
+<div class="site">
+
 <header>
-  <button class="name" onclick="go('cover')">HENRIQUE TAVEIRA</button>
+  <a class="brand" href="#top">HENRIQUE TAVEIRA</a>
   <nav>
-    <button onclick="go('home')">ÍNDICE</button><button onclick="go('moda')">MODA</button><button onclick="go('arte')">ARTE</button><button onclick="go('projetos')">PROJETOS</button><button onclick="go('processo')">PROCESSO</button><button onclick="go('sobre')">SOBRE</button><button onclick="go('contato')">CONTATO</button>
+    <a class="active" href="#top">DIÁRIO</a>
+    <a href="#today">FOTOS</a>
+    <a href="#yesterday">CADERNOS</a>
+    <a href="https://fariatitan.github.io/Portif-lio---fashion-designer/" target="_blank" rel="noopener">PROJETOS</a>
+    <a href="#sobre">SOBRE</a>
+    <button class="search" aria-label="Busca">⌕</button>
   </nav>
 </header>
-<section id="cover" class="view"><div class="cover"><div class="cover-copy"><div class="kicker">PORTFÓLIO / 2026</div><h1>Henrique<br>Taveira</h1><div class="cover-meta">RIO DE JANEIRO · BRASIL</div><button class="enter" onclick="go('home')">VER ÍNDICE</button></div><div class="cover-image"><img src="assets/img0.webp" alt="Imagem de abertura"></div></div></section>
-<section id="home" class="view active"><div class="home"><div class="home-head"><h2>Índice</h2><p>Selecione uma área</p></div><div class="menu-grid">
-<button class="menu-card" onclick="go('moda')"><img src="assets/img1.webp"><span class="veil"></span><span class="label"><span class="num">01</span><h3>Moda</h3><p>Produto · Alfaiataria · Direção</p></span></button>
-<button class="menu-card" onclick="go('arte')"><img src="assets/img0.webp"><span class="veil"></span><span class="label"><span class="num">02</span><h3>Arte</h3><p>Pintura · Séries · Estudos</p></span></button>
-<button class="menu-card" onclick="go('projetos')"><img src="assets/img4.webp"><span class="veil"></span><span class="label"><span class="num">03</span><h3>Projetos</h3><p>Imagem · Comunicação · Projetos especiais</p></span></button>
-<button class="menu-card" onclick="go('processo')"><img src="assets/img3.webp"><span class="veil"></span><span class="label"><span class="num">04</span><h3>Processo</h3><p>Pesquisa · Referências · Desenvolvimento</p></span></button>
-<button class="menu-card" onclick="go('sobre')"><img src="assets/img6.webp"><span class="veil"></span><span class="label"><span class="num">05</span><h3>Sobre</h3><p>Trajetória · Formação · Experiência</p></span></button>
-<button class="menu-card" onclick="go('contato')"><img src="assets/img5.webp"><span class="veil"></span><span class="label"><span class="num">06</span><h3>Contato</h3><p>Rio de Janeiro · Brasil</p></span></button>
-</div></div></section>
 
-<section id="moda" class="view"><div class="content"><div class="content-top"><span class="kicker">01 / MODA</span><button class="back" onclick="go('home')">← Índice</button></div><h2>Moda</h2><div class="content-body"><p class="content-lead">Desenvolvimento de produto, alfaiataria, jeans e couro, pesquisa de tendências, fittings, fornecedores, estampas, bordados e direção de imagem.</p><div class="project-grid"><article class="project-card"><img src="assets/img1.webp"><div><strong>Alfaiataria</strong><small>Desenvolvimento de produto e imagem.</small></div></article><article class="project-card"><img src="assets/img3.webp"><div><strong>Direção e criação</strong><small>Coleções, referências e desenvolvimento visual.</small></div></article><article class="project-card"><img src="assets/img6.webp"><div><strong>Pesquisa</strong><small>Referências, materiais, estampas e construção.</small></div></article></div></div></div></section>
-<section id="arte" class="view"><div class="content"><div class="content-top"><span class="kicker">02 / ARTE</span><button class="back" onclick="go('home')">← Índice</button></div><h2>Arte</h2><div class="content-body"><p class="content-lead">Trabalhos autorais organizados por obras, séries, estudos e aplicações.</p><div class="project-grid"><article class="project-card"><img src="assets/img0.webp"><div><strong>Obras</strong><small>Pintura e composição.</small></div></article><article class="project-card"><img src="assets/img6.webp"><div><strong>Estudos</strong><small>Geometria, textura e pesquisa visual.</small></div></article></div></div></div></section>
-<section id="projetos" class="view"><div class="content"><div class="content-top"><span class="kicker">03 / PROJETOS</span><button class="back" onclick="go('home')">← Índice</button></div><h2>Projetos</h2><div class="content-body"><p class="content-lead">Projetos selecionados que envolvem moda, imagem, comunicação, espaço e desenvolvimento.</p><div class="project-grid"><article class="project-card"><img src="assets/img4.webp"><div><strong>Comunicação</strong><small>Conteúdo e direção visual.</small></div></article><article class="project-card"><img src="assets/img5.webp"><div><strong>Imagem</strong><small>Campanhas e peças de comunicação.</small></div></article></div></div></div></section>
-<section id="processo" class="view"><div class="content"><div class="content-top"><span class="kicker">04 / PROCESSO</span><button class="back" onclick="go('home')">← Índice</button></div><h2>Processo</h2><div class="content-body"><p class="content-lead">Pesquisa, referências, testes, estudos e desenvolvimento organizados por projeto.</p><div class="project-grid"><article class="project-card"><img src="assets/img2.webp"><div><strong>Pesquisa</strong><small>Referências e desenvolvimento.</small></div></article><article class="project-card"><img src="assets/img3.webp"><div><strong>Arquivo</strong><small>Imagens, testes e estudos.</small></div></article></div></div></div></section>
-<section id="sobre" class="view"><div class="content"><div class="content-top"><span class="kicker">05 / SOBRE</span><button class="back" onclick="go('home')">← Índice</button></div><h2>Henrique<br>Taveira</h2><div class="content-body"><p class="content-lead">Profissional com trajetória em moda, arquitetura e desenvolvimento de produto.</p><div class="facts"><div class="fact"><b>Experiência</b><span>Galeria Espectro · Riachuelo · Amaro · Animale · Arqmetro & Sólido Arquitetura</span></div><div class="fact"><b>Formação</b><span>IED Brasil · IED Rio · Arquitetura e Urbanismo · PUC-Rio / PUC Paraná</span></div><div class="fact"><b>Competências</b><span>Produto · Tendências · Alfaiataria · Desenvolvimento técnico · Fornecedores · Imagem</span></div></div></div></div></section>
-<section id="contato" class="view"><div class="content"><div class="content-top"><span class="kicker">06 / CONTATO</span><button class="back" onclick="go('home')">← Índice</button></div><h2>Contato</h2><div class="content-body"><p class="content-lead">Rio de Janeiro · Brasil</p><div class="facts"><div class="fact"><b>E-mail</b><span>henrique950704952@gmail.com</span></div><div class="fact"><b>Portfólio</b><span>Henrique Taveira / 2026</span></div></div></div></div></section>
-<script>
-const views=[...document.querySelectorAll('.view')];
-function go(id){location.hash=id}
-function render(){let id=location.hash.replace('#','')||'home';if(!document.getElementById(id))id='cover';views.forEach(v=>v.classList.toggle('active',v.id===id));window.scrollTo(0,0)}
-window.addEventListener('hashchange',render);render();
-</script>
-</body></html>
+<main id="top">
+
+<section class="hero">
+  <img src="assets/hero.webp" alt="Entre o que se vê e o que se vive">
+  <div class="hero-copy">
+    <div class="kicker">DIÁRIO</div>
+    <h1>Entre o que se vê<br>e o que se vive.</h1>
+  </div>
+  <div class="hero-nav">01 — 04 &nbsp; ‹ &nbsp; ›</div>
+</section>
+
+<section class="feed" id="today">
+  <div class="section-head">
+    <div class="left">
+      <h2>Today</h2><span class="rule"></span>
+      <span class="meta">RIO DE JANEIRO, BRASIL</span>
+    </div>
+    <span class="meta">13 SET 2026</span>
+  </div>
+
+  <div class="grid3 today">
+    <a class="card" href="#arte">
+      <img src="assets/today_01.webp" alt="Pintura">
+      <div class="caption">01 &nbsp; / &nbsp; PINTURA</div>
+    </a>
+    <a class="card" href="https://fariatitan.github.io/Portif-lio---fashion-designer/" target="_blank" rel="noopener">
+      <img src="assets/today_02.webp" alt="Moda">
+      <div class="caption">02 &nbsp; / &nbsp; MODA</div>
+    </a>
+    <a class="card" href="#cadernos">
+      <img src="assets/today_03.webp" alt="Estudo">
+      <div class="caption">03 &nbsp; / &nbsp; ESTUDO</div>
+    </a>
+  </div>
+</section>
+
+<section class="feed" id="yesterday">
+  <div class="section-head">
+    <div class="left"><h2>Yesterday</h2></div>
+    <span class="meta">12 SET 2026</span>
+  </div>
+
+  <div class="grid3 yesterday">
+    <a class="card" href="#processo">
+      <img src="assets/yesterday_01.webp" alt="Processo de moda">
+      <div class="caption">04 &nbsp; / &nbsp; PROCESSO</div>
+    </a>
+    <a class="card" href="assets/yesterday_02_video.webp" target="_blank">
+      <img src="assets/yesterday_02_video.webp" alt="Vídeo">
+      <span class="video-badge">▶</span>
+      <div class="caption">05 &nbsp; / &nbsp; VÍDEO</div>
+    </a>
+    <a class="card" href="#detalhe">
+      <img src="assets/yesterday_03.webp" alt="Detalhe">
+      <div class="caption">06 &nbsp; / &nbsp; DETALHE</div>
+    </a>
+  </div>
+</section>
+
+<section id="arte" style="height:1px"></section>
+<section id="cadernos" style="height:1px"></section>
+<section id="processo" style="height:1px"></section>
+<section id="detalhe" style="height:1px"></section>
+<section id="sobre" style="height:1px"></section>
+
+</main>
+
+<footer>
+  <span>— &nbsp; IMAGENS DE UM TEMPO EM PROCESSO</span>
+  <span>HENRIQUE TAVEIRA · RIO DE JANEIRO, BRASIL</span>
+</footer>
+
+</div>
+</body>
+</html>
