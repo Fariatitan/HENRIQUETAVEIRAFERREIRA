@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fariatitan.github.io/HENRIQUETAVEIRA/sitemap.xml

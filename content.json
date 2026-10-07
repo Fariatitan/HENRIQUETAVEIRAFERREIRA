@@ -1,0 +1,583 @@
+{
+  "meta": {
+    "title": "HENRIQUE TAVEIRA — Ateliê de Moda, Artes Visuais & Direção Criativa",
+    "description": "Plataforma Profissional e Ateliê de Henrique Taveira: Design de Moda, Alfaiataria Comercial, Artes Visuais Têxteis, Projetos Institucionais e Pesquisa."
+  },
+  "brand": {
+    "name": "HENRIQUE TAVEIRA",
+    "tagline": "ATELIÊ & ESTÚDIO CRIATIVO"
+  },
+  "hero": {
+    "kicker": "DIREÇÃO CRIATIVA · MODA · ARTE VISUAL",
+    "title": "Henrique Taveira",
+    "subtitle": "Ateliê de criação e desenvolvimento de moda contemporânea, intervenções em artes visuais têxteis, direção criativa de campanhas e projetos institucionais de impacto."
+  },
+  "sections": [
+    {
+      "id": "home",
+      "navLabel": "PANORAMA",
+      "kicker": "PANORAMA DO ATELIÊ",
+      "title": "Panorama Geral",
+      "subtitle": "Navegação pelas frentes de criação, pesquisa e atuação profissional",
+      "cards": [
+        {
+          "num": "01 / MODA",
+          "title": "Moda & Alfaiataria",
+          "desc": "Coleções de produto, alfaiataria comercial refinada, modelagens contemporâneas e seleção de fibras nobres (Animale, Amaro, Riachuelo).",
+          "image": "slide_15_foto_1.jpeg",
+          "target": "moda",
+          "linkLabel": "Acessar Coleções →"
+        },
+        {
+          "num": "02 / ARTE",
+          "title": "Artes Visuais & Têxtil",
+          "desc": "Obras autorais, bordados botânicos minuciosos em ponto matiz, pintura gestual sobre vestuário, mandalas em pura seda e jacquards poéticos.",
+          "image": "slide_22_foto_1.jpeg",
+          "target": "arte",
+          "linkLabel": "Ver Obras e Séries →"
+        },
+        {
+          "num": "03 / PROJETOS",
+          "title": "Projetos Especiais & Cases",
+          "desc": "Parcerias institucionais e editoriais: Terno Oficial da Seleção Brasileira Feminina de Futebol (CBF x Animale - Copa 2023) e campanhas conceituais.",
+          "image": "slide_13_foto_1.jpeg",
+          "target": "projetos",
+          "linkLabel": "Explorar Projetos →"
+        },
+        {
+          "num": "04 / PROCESSO",
+          "title": "Processo, Lab & Pesquisa",
+          "desc": "Imersão em Veneza (Palazzo Peggy Guggenheim), estudos sobre a escultura cinética de Calder, croquis manuais, moulage 3D e arquivos.",
+          "image": "slide_02_foto_1.jpeg",
+          "target": "processo",
+          "linkLabel": "Abrir Laboratório →"
+        },
+        {
+          "num": "05 / SOBRE",
+          "title": "Perfil & Trajetória",
+          "desc": "Formação em Design de Moda (IED) e Arquitetura & Urbanismo (PUC), histórico profissional em grandes marcas nacionais e posicionamento criativo.",
+          "image": "slide_01_foto_1.jpeg",
+          "target": "sobre",
+          "linkLabel": "Ler Biografia →"
+        },
+        {
+          "num": "06 / CONTATO",
+          "title": "Contato & Parcerias",
+          "desc": "Agendamento de projetos, consultoria de moda, encomendas artísticas, direção criativa e atendimento direto via WhatsApp e e-mail.",
+          "isIcon": true,
+          "target": "contato",
+          "linkLabel": "Entrar em Contato →"
+        }
+      ]
+    },
+    {
+      "id": "moda",
+      "navLabel": "MODA",
+      "kicker": "01 / MODA, ALFAIATARIA & PRODUTO",
+      "title": "MODA & ALFAIATARIA",
+      "lead": "Desenvolvimento de linhas comerciais de moda e alfaiataria contemporânea. A precisão do corte, a escolha rigorosa de tecidos nobres e o equilíbrio entre a forma estruturada e o conforto do corpo em movimento.",
+      "blockTitle": "ALFAIATARIA COMERCIAL & COLEÇÕES (ANIMALE)",
+      "cards": [
+        {
+          "id": "moda-1",
+          "title": "SMOKING CLÁSSICO DE ALFAIATARIA",
+          "desc": "Construção de terno smoking preto em lã fria premium com lapela acetinada e caimento estruturado de precisão.",
+          "image": "slide_15_foto_1.jpeg",
+          "caption": "Terno Smoking Clássico — Alfaiataria Feminina Fina Animale"
+        },
+        {
+          "id": "moda-2",
+          "title": "TERNO OVERSIZED SOLAR",
+          "desc": "Crepe de lã tropical leve, calça pantalona com pregas profundas e alfaiataria contemporânea fluida.",
+          "image": "slide_16_foto_1.jpeg",
+          "caption": "Terno Oversized Amarelo Pastel — Animale"
+        },
+        {
+          "id": "moda-3",
+          "title": "SPOLVERINO CROPPED & BERMUDA",
+          "desc": "Silhueta urbana de casaco cropped estruturado com abotoamento duplo combinado com bermuda de alfaiataria.",
+          "image": "slide_17_foto_1.jpeg",
+          "caption": "Spolverino Cropped & Bermuda — Animale"
+        },
+        {
+          "id": "moda-4",
+          "title": "BLAZER WRAP AZUL SERENITY",
+          "desc": "Fechamento transpassado e amarração lateral assimétrica valorizando a silhueta com linhas limpas.",
+          "image": "slide_18_foto_1.jpeg",
+          "caption": "Blazer Wrap Transpassado Azul Serenity — Animale"
+        },
+        {
+          "id": "moda-5",
+          "title": "COLETE DE ALFAIATARIA",
+          "desc": "Peça-chave versátil desenvolvida para uso autônomo como top ou sobreposição clássica de alfaiataria.",
+          "image": "slide_18_foto_2.jpeg",
+          "caption": "Colete de Alfaiataria Estruturado — Animale"
+        },
+        {
+          "id": "moda-6",
+          "title": "CURADORIA TÊXTIL DE MATÉRIAS-PRIMAS",
+          "desc": "Desenvolvimento e especificação de lãs frias, crepes de alta gramatura, gabardines e linhos nobres.",
+          "image": "slide_20_foto_1.jpeg",
+          "caption": "Curadoria Têxtil de Alfaiataria — Animale"
+        },
+        {
+          "id": "moda-7",
+          "title": "SAIA MIDI COM FENDA & CAMISARIA",
+          "desc": "Modelagem de saia midi de alfaiataria com fenda frontal coordenada com camisaria de corte impecável.",
+          "image": "slide_45_foto_1.jpeg",
+          "caption": "Saia Midi com Fenda & Camisaria — Linha Comercial Animale"
+        },
+        {
+          "id": "moda-8",
+          "title": "CONJUNTO DE ALFAIATARIA CONTEMPORÂNEA",
+          "desc": "Linha de alfaiataria urbana com tecidos de caimento fluido e detalhes de acabamento de luxo.",
+          "image": "slide_46_foto_1.jpeg",
+          "caption": "Conjunto de Alfaiataria Contemporânea — Animale"
+        }
+      ],
+      "facts": [
+        {
+          "label": "EXPERIÊNCIA DE MERCADO",
+          "value": "ANIMALE · AMARO · RIACHUELO"
+        },
+        {
+          "label": "CATEGORIAS DE PRODUTO",
+          "value": "Alfaiataria · Vestidos · Camisaria · Jeans · Couro · Jaquetas"
+        },
+        {
+          "label": "COMPETÊNCIAS TÉCNICAS",
+          "value": "Fittings Anatômicos · Fichas Técnicas · Gestão de Fornecedores · Cartela de Cores"
+        }
+      ]
+    },
+    {
+      "id": "arte",
+      "navLabel": "ARTE",
+      "kicker": "02 / ARTES VISUAIS & INTERVENÇÕES",
+      "title": "ARTE VISUAL & TÊXTIL",
+      "lead": "Pesquisa plástica autoral integrando arte contemporânea, intervenções manuais, bordados botânicos, pintura têxtil gestual e séries visuais poéticas. A matéria têxtil tratada como tela e suporte expressivo.",
+      "blockTitle": "INTERVENÇÕES TÊXTEIS & OBRAS AUTORAIS",
+      "cards": [
+        {
+          "id": "arte-1",
+          "title": "JAQUETA SARJA & BORDADO BOTÂNICO",
+          "desc": "Intervenção manual em sarja cáqui pesada com folhagens e ramos botânicos em ponto matiz e fio dourado.",
+          "image": "slide_22_foto_1.jpeg",
+          "caption": "Jaqueta Militar com Bordados Botânicos Manuais"
+        },
+        {
+          "id": "arte-2",
+          "title": "DETALHE DE ARTESANALIDADE TÊXTIL",
+          "desc": "Aproximação em alta definição revelando os relevos dos pontos e o contraste entre o rústico e o nobre.",
+          "image": "slide_23_foto_1.jpeg",
+          "caption": "Macro-detalhe do Bordado Manual Botânico"
+        },
+        {
+          "id": "arte-3",
+          "title": "SÉRIE POÉTICA TÊXTIL: 'O TEMPO'",
+          "desc": "Intervenção em tecido plano com palavras caligráficas bordadas e tecidas em jacquard poético.",
+          "image": "slide_26_foto_1.jpeg",
+          "caption": "Série Poética Têxtil: O Tempo (Passa, Voa, Esquece, Esquenta, Esfria)"
+        },
+        {
+          "id": "arte-4",
+          "title": "MANDALA GEOMÉTRICA RADIAL EM SEDA",
+          "desc": "Composição circular em seda preta com fios prateados e reflexão tridimensional de luz.",
+          "image": "slide_32_foto_1.jpeg",
+          "caption": "Mandala Geométrica Radial em Seda — Freedom of Being"
+        },
+        {
+          "id": "arte-5",
+          "title": "ALTA PRECISÃO TÊXTIL",
+          "desc": "Macro-fotografia dos pontos radiais milimétricos criando dinâmica geométrica de luz.",
+          "image": "slide_33_foto_1.jpeg",
+          "caption": "Macro-fotografia dos Fios Metálicos da Mandala"
+        },
+        {
+          "id": "arte-6",
+          "title": "SAIA GODÊ NARCISOS BOTÂNICOS",
+          "desc": "Pintura manual aquarelada de narcisos amarelos estilizados com tipografia autoral 'FREEDOM OF BEING'.",
+          "image": "slide_34_foto_1.jpeg",
+          "caption": "Saia Godê Narcisos Botânicos — Freedom of Being"
+        },
+        {
+          "id": "arte-7",
+          "title": "DENIM COUTURE & CONSTELAÇÕES",
+          "desc": "Jaqueta jeans vintage oversized numerada com intervenção de pintura à mão com motivos celestes.",
+          "image": "slide_36_foto_1.jpeg",
+          "caption": "Jaqueta Jeans Couture — Constelações & Freedom"
+        },
+        {
+          "id": "arte-8",
+          "title": "VESTIDO CHEMISIER FLORAL SOLAR",
+          "desc": "Vestido em tom mostarda com bordados botânicos manuais descendo pela barra e vista de botões.",
+          "image": "slide_37_foto_1.jpeg",
+          "caption": "Vestido Chemisier Floral com Bordados Botânicos"
+        },
+        {
+          "id": "arte-9",
+          "title": "PARKA COM PINTURA GESTUAL",
+          "desc": "Pintura manual gestual em amarelo solar e azul sobre parka impermeável cáqui.",
+          "image": "slide_39_foto_1.jpeg",
+          "caption": "Parka Utilitária com Pintura Gestual"
+        },
+        {
+          "id": "arte-10",
+          "title": "BORDADOS EM TRAÇO FINO MINIMALISTA",
+          "desc": "Bordados manuais delicados de pássaros da paz, cactos e ramos sobre alfaiataria de algodão.",
+          "image": "slide_41_foto_1.jpeg",
+          "caption": "Camisa com Bordados Minimalistas: Pássaros & Cactos"
+        },
+        {
+          "id": "a-pista-corpo-objeto-espaco",
+          "title": "A PISTA — CORPO, OBJETO E ESPAÇO",
+          "desc": "Desdobramento de A Dança através do percurso Corpo -> Objeto -> Roupa -> Espaço. A investigação da estranheza da tabi de bico dividido e aqu...",
+          "image": "a-pista-corpo-objeto-espaco.jpg",
+          "caption": "A PISTA — CORPO, OBJETO E ESPAÇO (2026)"
+        }
+      ],
+      "facts": [
+        {
+          "label": "TÉCNICAS PLÁSTICAS",
+          "value": "Bordado Manual · Pintura Gestual Têxtil · Jacquards · Aquarela"
+        },
+        {
+          "label": "SÉRIES AUTORAIS",
+          "value": "Série O Tempo · Série Freedom of Being · Botânica Têxtil"
+        },
+        {
+          "label": "CONCEITO",
+          "value": "Diálogo entre a forma escultórica, a memória e a arquitetura do vestuário"
+        }
+      ]
+    },
+    {
+      "id": "pintura",
+      "navLabel": "PINTURA",
+      "kicker": "03 / PINTURA & SÉRIE CORPO",
+      "title": "PINTURA & SÉRIE CORPO",
+      "lead": "A investigação plástica do corpo humano como matéria densa, arquitetura viva e desconstrução gestual. Pinturas a óleo sobre canvas, linho cru e pigmentos minerais.",
+      "blockTitle": "OBRAS MASTER — SÉRIE CORPO (2026)",
+      "cards": [
+        {
+          "id": "pint-1",
+          "title": "DESPEDIDA — PINTURA A ÓLEO SOBRE CANVAS",
+          "desc": "Obra central da Série Corpo investigando a desconstrução da figura através de campos de tensão e gestos densos.",
+          "image": "DESPEDIDA_Foto_Original_Pintura.jpg",
+          "caption": "Despedida — Óleo sobre Canvas, Pigmentos e Chassi"
+        },
+        {
+          "id": "pint-2",
+          "title": "FACE — ESTUDO DE EXPRESSÃO E MATÉRIA",
+          "desc": "Pesquisa sobre a máscara e a identidade. A matéria pictórica escorrendo e dialogando com a tela crua.",
+          "image": "FACE_Foto_Original_Pintura.jpg",
+          "caption": "Face — Óleo e Solvente sobre Tela Crua"
+        },
+        {
+          "id": "pint-3",
+          "title": "DORSO & PESCOÇO — ANATOMIA ESTRUTURAL",
+          "desc": "O corpo tratado como linha de força construtiva, unindo a volumetria da arquitetura e o corte da modelagem.",
+          "image": "PESCOCO_Foto_Original_Pintura.jpeg",
+          "caption": "Dorso & Pescoço — Óleo e Carvão sobre Canvas"
+        },
+        {
+          "id": "pint-4",
+          "title": "CAMPO VERMELHO — ESPECTRO EM TELA CRUA",
+          "desc": "O impacto da monocromia e o contraste ótico entre o linho cru e o vermelho puro.",
+          "image": "CAMPO_VERMELHO_Espectro_TelaCrua.jpg",
+          "caption": "Campo Vermelho — Linho Cru e Pigmento Mineral"
+        },
+        {
+          "id": "noturna-poliptico",
+          "title": "NOTURNA — O POLÍPTICO DA INTIMIDADE",
+          "desc": "Quatro estudos sobre confinamento, vigília e luz residual. A recusa do retrato explicativo em favor da tensão crua dos corpos na madrugada.",
+          "image": "NOTURNA_04_CORREDOR.jpg",
+          "caption": "NOTURNA IV — A Condução (O Corredor, 2026)"
+        },
+        {
+          "id": "cabaret-fantasma",
+          "title": "CABARET — O FANTASMA DOCUMENTAL",
+          "desc": "A fabricação do flagrante absoluto de um submundo que nunca existiu. Simulação analógica Leica com flash direto e grão Tri-X.",
+          "image": "CABARET_40X60.png",
+          "caption": "CABARET — O Fantasma Documental (2026)"
+        },
+        {
+          "id": "orbitante-massa",
+          "title": "ORBITANTE — O LIMITE DA FORMA",
+          "desc": "O ser como centro orbital. A figura descentralizada sofrendo a gravidade da matéria pictórica espessa e do impasto brutalista.",
+          "image": "ORBITANTE_01.jpg",
+          "caption": "Orbitante 001 — Pintura a Óleo Espatulada (2026)"
+        },
+        {
+          "id": "figura-minimal-ink",
+          "title": "FIGURA — A FIGURA COMO LINHA",
+          "desc": "Presença reduzida ao essencial. O corte de modelagem têxtil contendo o corpo antes da dissolução nos campos cromáticos de óleo.",
+          "image": "FIGURA_VERMELHO.jpeg",
+          "caption": "Figura / Minimal Ink — O Tríptico de Presença (2026)"
+        },
+        {
+          "id": "noturna-estudos-intimidade",
+          "title": "NOTURNA — QUATRO ESTUDOS SOBRE INTIMIDADE",
+          "desc": "Políptico em quatro atos sobre confinamento, vigília e luz residual. A recusa do retrato explicativo em favor da tensão crua dos corpos em e...",
+          "image": "noturna-estudos-intimidade.jpg",
+          "caption": "NOTURNA — QUATRO ESTUDOS SOBRE INTIMIDADE (2026)"
+        },
+        {
+          "id": "cabaret-fantasma-documental",
+          "title": "CABARET — O FANTASMA DOCUMENTAL",
+          "desc": "A fabricação do flagrante absoluto de um submundo inexistente. A inteligência artificial operando como erosão da verdade documental através ...",
+          "image": "cabaret-fantasma-documental.jpg",
+          "caption": "CABARET — O FANTASMA DOCUMENTAL (2026)"
+        },
+        {
+          "id": "orbitante-limite-forma",
+          "title": "ORBITANTE — O LIMITE DA FORMA",
+          "desc": "Investigação pictórica sobre o ser como centro orbital. A figura descentralizada sofrendo deformação decorrente da gravidade e atração da ma...",
+          "image": "orbitante-limite-forma.jpg",
+          "caption": "ORBITANTE — O LIMITE DA FORMA (2026)"
+        },
+        {
+          "id": "figura-como-linha",
+          "title": "FIGURA — A FIGURA COMO LINHA",
+          "desc": "Presença reduzida ao essencial. O corte de modelagem têxtil contendo o corpo antes da dissolução nos campos cromáticos de óleo....",
+          "image": "figura-como-linha.jpg",
+          "caption": "FIGURA — A FIGURA COMO LINHA (2026)"
+        }
+      ],
+      "facts": [
+        {
+          "label": "SUPORTE & TÉCNICA",
+          "value": "Pintura a Óleo · Canvas · Linho Cru · Pigmentos Minerais"
+        },
+        {
+          "label": "DIMENSÕES",
+          "value": "120x80cm · Painéis e Formatos Monumentais"
+        },
+        {
+          "label": "CONCEITO",
+          "value": "O corpo como arquitetura viva e matéria em transição"
+        }
+      ]
+    },
+    {
+      "id": "projetos",
+      "navLabel": "PROJETOS",
+      "kicker": "03 / PROJETOS ESPECIAIS & CASES",
+      "title": "PROJETOS & CASES ESPECIAIS",
+      "lead": "Grandes projetos especiais e institucionais conectando estratégia de marca, alta moda, desenvolvimento de imagem, representatividade de gênero e repercussão na mídia global.",
+      "blockTitle": "CASE HISTÓRICO: SELEÇÃO BRASILEIRA FEMININA CBF x ANIMALE (COPA 2023)",
+      "cards": [
+        {
+          "id": "proj-1",
+          "title": "CAMPANHA OFICIAL: RAINHA MARTA",
+          "desc": "Ensaio oficial de lançamento dos ternos sob medida com ampla repercussão na imprensa esportiva e de moda global.",
+          "image": "slide_13_foto_1.jpeg",
+          "caption": "Campanha Oficial CBF x Animale com a Rainha Marta"
+        },
+        {
+          "id": "proj-2",
+          "title": "O EMBARQUE HISTÓRICO",
+          "desc": "Primeira vez na história que a delegação feminina viajou vestindo alta alfaiataria sob medida.",
+          "image": "slide_11_foto_1.jpeg",
+          "caption": "Embarque Histórico da Seleção Brasileira para a Austrália"
+        },
+        {
+          "id": "proj-3",
+          "title": "ENGENHARIA DE CORTE & FITTINGS",
+          "desc": "Ajustes anatômicos para corpos de atletas, mensagens personalizadas no forro e acabamentos de alfaiataria fina.",
+          "image": "slide_12_foto_1.jpeg",
+          "caption": "Processo de Fitting e Acabamento Anatômico Sob Medida"
+        },
+        {
+          "id": "proj-4",
+          "title": "CHEGADA À COPA DO MUNDO",
+          "desc": "A consolidação do terno como símbolo de protagonismo, respeito e elegância no esporte internacional.",
+          "image": "slide_14_foto_1.jpeg",
+          "caption": "Delegação Desembarcando na Austrália"
+        },
+        {
+          "id": "proj-5",
+          "title": "'TALKING TO THE UNIVERSE' — IMAGEM & ARTE",
+          "desc": "Desenvolvimento visual conectando elementos cósmicos, artes gráficas e conceito contemporâneo de vestuário.",
+          "image": "slide_43_foto_1.jpeg",
+          "caption": "Projeto Editorial: Talking to the Universe"
+        },
+        {
+          "id": "proj-6",
+          "title": "'LUZ DE JANEIRO' — PROJETO CARTOGRÁFICO",
+          "desc": "Desenvolvimento de estamparia com cartografia solar, caligrafia autoral e nuances de areia dourada.",
+          "image": "slide_44_foto_1.jpeg",
+          "caption": "Projeto Cartográfico: Luz de Janeiro / Areia Dourada"
+        },
+        {
+          "id": "efebo-18-rj-romance-memoria",
+          "title": "EFEBO 18 RJ — ROMANCE & MEMÓRIA (LIVRO 1)",
+          "desc": "Investigação profunda e sensível da infância até os 18 anos. Uma travessia de cura, amadurecimento e memória no Rio de Janeiro, conectando a...",
+          "image": "efebo-18-rj-romance-memoria.jpg",
+          "caption": "EFEBO 18 RJ — ROMANCE & MEMÓRIA (LIVRO 1) (2026)"
+        }
+      ],
+      "facts": [
+        {
+          "label": "CLIENTES & PARCERIAS",
+          "value": "Confederação Brasileira de Futebol (CBF) & ANIMALE"
+        },
+        {
+          "label": "ABRANGÊNCIA",
+          "value": "Copa do Mundo Feminina FIFA 2023 (Austrália & Nova Zelândia)"
+        },
+        {
+          "label": "POSICIONAMENTO",
+          "value": "União entre esporte de alto rendimento, empoderamento e alta costura comercial"
+        }
+      ]
+    },
+    {
+      "id": "processo",
+      "navLabel": "PROCESSO",
+      "kicker": "04 / PROCESSO, LAB & ARQUIVO",
+      "title": "PROCESSO & PESQUISA",
+      "lead": "O método de ateliê: pesquisa de campo em Veneza, investigação semântica, desenho de croquis manuais, testes de moulage tridimensional, plissados artesanais e fichas de produto.",
+      "blockTitle": "PROJETO AUTORAL: COLEÇÃO PEGGY GUGGENHEIM & CALDER (2017)",
+      "cards": [
+        {
+          "id": "proc-1",
+          "title": "PESQUISA DE CAMPO: VENEZA",
+          "desc": "Mergulho no quarto de Peggy Guggenheim no Palazzo Venier dei Leoni e no universo íntimo da colecionadora.",
+          "image": "slide_02_foto_1.jpeg",
+          "caption": "Pesquisa Peggy Guggenheim em Veneza"
+        },
+        {
+          "id": "proc-2",
+          "title": "ESCULTURA & CINÉTICA DOS MÓBILES",
+          "desc": "O diálogo com a cabeceira em prata forjada por Alexander Calder como matriz de formas e silhuetas móveis.",
+          "image": "slide_03_foto_1.jpeg",
+          "caption": "A Cabeceira Escultórica de Alexander Calder"
+        },
+        {
+          "id": "proc-3",
+          "title": "MOODBOARD & CARTELA MINERAL",
+          "desc": "Painel conceitual reunindo azuis venezianos, tons de areia, ocre e dourado metálico.",
+          "image": "slide_04_foto_1.jpeg",
+          "caption": "Moodboard e Cartela Cromática Mineral"
+        },
+        {
+          "id": "proc-4",
+          "title": "CROQUIS & DESENHO DE ESTILO",
+          "desc": "Croqui autoral estilizado com silhueta assimétrica, recortes e tecidos fluidos.",
+          "image": "slide_05_foto_1.jpeg",
+          "caption": "Croqui de Estilo — Look 01"
+        },
+        {
+          "id": "proc-5",
+          "title": "LOOK 01 — FLUIDEZ & ESTRUTURA",
+          "desc": "Transposição tridimensional do croqui para o corpo real com sobreposição de texturas.",
+          "image": "slide_05_foto_2.jpeg",
+          "caption": "Look 01 Executado em Estúdio/Passarela"
+        },
+        {
+          "id": "proc-6",
+          "title": "LOOK 02 — VOLUMES ESCULTÓRICOS",
+          "desc": "Intersecção de transparências, recortes pontuais e formas inspiradas na arte moderna.",
+          "image": "slide_06_foto_2.jpeg",
+          "caption": "Look 02 — Geometria & Volumes"
+        },
+        {
+          "id": "proc-7",
+          "title": "LOOK 03 — SÍNTESE & MOVIMENTO",
+          "desc": "O equilíbrio entre a leveza dos tecidos e o rigor construtivo da modelagem.",
+          "image": "slide_07_foto_2.jpeg",
+          "caption": "Look 03 — Síntese & Movimento"
+        },
+        {
+          "id": "proc-8",
+          "title": "PLISSADOS & MANIPULAÇÃO TÊXTIL",
+          "desc": "Testes práticos de dobras térmicas e memória de tecido para criação de texturas cinéticas.",
+          "image": "slide_28_foto_1.jpeg",
+          "caption": "Experimentação de Plissados Artesanais"
+        },
+        {
+          "id": "proc-9",
+          "title": "MOULAGE 3D & ESTRUTURA CORSET",
+          "desc": "Prototipagem em manequim de atelier investigando sustentação, barbatanas e anatomia corporal.",
+          "image": "slide_30_foto_1.jpeg",
+          "caption": "Moulage Tridimensional de Corset Anatômico"
+        }
+      ],
+      "facts": [
+        {
+          "label": "LABORATÓRIO CRIATIVO",
+          "value": "Veneza · Bienal de Arte · Palazzo Venier dei Leoni"
+        },
+        {
+          "label": "TÉCNICAS DE PROTÓTIPO",
+          "value": "Moulage 3D · Plissados Manuais · Estamparia Digital · Fichas Técnicas"
+        },
+        {
+          "label": "INSPIRAÇÃO ARTÍSTICA",
+          "value": "Alexander Calder · Peggy Guggenheim · Escultura Moderna"
+        }
+      ]
+    },
+    {
+      "id": "sobre",
+      "navLabel": "SOBRE",
+      "kicker": "05 / PERFIL & TRAJETÓRIA",
+      "title": "SOBRE HENRIQUE TAVEIRA",
+      "lead": "Estilista, Diretor Criativo e Artista Visual. Uma prática contemporânea madura que transita com rigor técnico entre a precisão da modelagem, a pesquisa têxtil e a espessura da matéria pictórica.",
+      "portrait": "slide_01_foto_1.jpeg",
+      "bioParagraphs": [
+        "Minha formação articula áreas complementares: graduado em <strong>Design de Moda pelo Istituto Europeo di Design (IED)</strong> e com <strong>Pós-Graduação pela Pontifícia Universidade Católica (PUC)</strong>. Essa bagagem interdisciplinar sustenta uma pesquisa contínua onde o corpo é apreendido como estrutura espacial, o tecido como matéria arquitetônica e a imagem como campo de experimentação plástica e ótica.",
+        "Com mais de seis anos de atuação executiva e curatorial na <strong>ANIMALE</strong>, liderei o desenvolvimento de linhas de alfaiataria premium, jeans e couro, conduzindo projetos de repercussão global como a criação e desenvolvimento dos <em>Ternos Oficiais da Seleção Brasileira Feminina de Futebol na Copa do Mundo FIFA 2023</em>.",
+        "No ateliê e nas artes visuais, investigo o corte, a memória e a matéria em séries fotográficas monocromáticas, pinturas a óleo com impasto brutalista, bordados botânicos minuciosos e ensaios curatoriais independentes."
+      ],
+      "facts": [
+        {
+          "label": "FORMAÇÃO ACADÊMICA",
+          "value": "IED (Graduação em Moda) · PUC (Pós-Graduação)"
+        },
+        {
+          "label": "HISTÓRICO PROFISSIONAL",
+          "value": "ANIMALE · AMARO · RIACHUELO · GALERIA ESPECTRO"
+        },
+        {
+          "label": "ATUAÇÃO ATUAL",
+          "value": "Direção Criativa, Alfaiataria sob Medida & Produção Artística"
+        }
+      ]
+    },
+    {
+      "id": "contato",
+      "navLabel": "CONTATO",
+      "kicker": "06 / ATENDIMENTO & PARCERIAS",
+      "title": "CONTATO COMERCIAL",
+      "lead": "Disponível para consultorias de moda, desenvolvimento de coleções de alfaiataria, direção criativa de campanhas, projetos institucionais e encomendas de obras têxteis.",
+      "items": [
+        {
+          "type": "whatsapp",
+          "tag": "WHATSAPP DIRETO",
+          "value": "(11) 95070-4952",
+          "desc": "Atendimento ágil para novos projetos e orçamentos.",
+          "link": "https://wa.me/5511950704952",
+          "linkLabel": "CHAMAR NO WHATSAPP →"
+        },
+        {
+          "type": "email",
+          "tag": "E-MAIL PROFISSIONAL",
+          "value": "henriquetf88@proton.me",
+          "desc": "Envio de briefings, propostas e convites institucionais.",
+          "link": "mailto:henriquetf88@proton.me",
+          "linkLabel": "ENVIAR E-MAIL →"
+        },
+        {
+          "type": "location",
+          "tag": "LOCALIZAÇÃO & BASE",
+          "value": "Rio de Janeiro / São Paulo",
+          "desc": "Atuação presencial em ateliê e remoto para todo o Brasil e exterior.",
+          "isPrint": true,
+          "linkLabel": "IMPRIMIR / GERAR PDF"
+        }
+      ]
+    }
+  ]
+}
